@@ -1,0 +1,24 @@
+Instruction on how to build the Lucene index 
+
+1. We have converted the .ipynb Jupyter Notebooks to index and search.py files. 
+  The file index.py should be first converted into an executable file.
+  Run the below command to do so:-
+
+     python3 index.py 
+
+ Please ignore all the print statements after running the above command.It should create an lucene index directory called  ‘LuceneIndexAutocomplete1’
+ We have converted the .ipynb Jupyter Notebook to a .py file. 
+
+2.To run the search file first convert the search.py to an executable file,
+ 
+     chmod +x search.py
+
+  After the executable is created, run the following commands to see various outputs in the below snippets. 
+
+     python3 search.py 'locality:Austin'  
+     
+     python3 search.py 'locality:Austin,name:Starbucks'
+   
+     python3 search.py 'locality:Austin,name:Starbucks,rating:2'
+
+     python3 search.py 'locality:Austin,name:Starbucks,rating:2,price:$$'
